@@ -1,52 +1,153 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <title>State Data Book 2012</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <style type="text/css">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+@media screen and (min-width: 914px) {
     body {
-  padding-top: 50px;
+        width: 854px;
+        margin:10px auto;
+    }
 }
-.starter-template {
-  padding: 40px 15px;
-  text-align: center;
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
 }
-h2 {padding-top: 50px;}
-.navbar-inverse {background-color: #3784B4;}
-.navbar-inverse .navbar-nav>li>a  {color:white;}
-.navbar-inverse .navbar-nav>li>a:hover  {color:yellow;}
-.navbar-inverse .navbar-brand { color:white;}
 </style>
-  </head>
-  <body>
-   
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand scroll"  href="#">State Data Book 2012</a>
-        <div class="nav-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#ex" class="scroll">Executive Summary</a></li>
-                <li><a href="#intro" class="scroll">Introduction</a></li>
-                <li><a href="#meth" class="scroll">Methodology</a></li>
-                <li><a href="#nat" class="scroll">National Trends in Employment</a></li>
-                <li><a href="#conc" class="scroll">Conclusion</a></li>
-                <li><a href="#tc" class="scroll">Topical Chapter</a></li>
+<title>StateData: The National Report on Employment Services and Outcomes</title>
 
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </div>
-
-    <div class="container">
-
-      
+</head>
+<body>
 <h1>StateData: The National Report on Employment Services and Outcomes</h1>
 
 <p>John Butterworth
@@ -60,16 +161,6 @@ Jennifer Sulewski</p>
 <p>Institute for Community Inclusion (UCEDD)<br/>
 University of Massachusetts Boston
 Winter 2013</p>
-
-<div class="alert alert-info" style="overflow:hidden; color:black; font-weight:bold;" >
-  <img src="img/cover2011_onepageF.png" alt="cover of 2011 statedata book" style="float:left; padding-right:2em;" />
-  <p style="padding-top: 2em;">The StateData employment report is a product of Access to Integrated Employment, a project of the Institute for Community Inclusion (ICI) at the University of Massachusetts Boston, supported in part by the Administration on Developmental Disabilities, U.S. Department of Health and Human Services, under cooperative agreement #90DN0216. The opinions contained in this report are those of the grantee and do not necessarily reflect those of the funders.</p>
-<p>
-    <a href="img/statedata2011_Fweb.pdf" class="btn btn-primary btn-large">
-      Download the pdf (3mb)
-    </a>
-  </p>
-</div>
 
 <p><em>The StateData employment report is a product of Access to Integrated Employment, a project of the Institute for Community Inclusion (ICI) at the University of Massachusetts Boston, supported in part by the Administration on Intellectual and Developmental Disabilities, Administration for Community Living, U.S. Department of Health and Human Services, under cooperative agreement #90DN0295. The opinions contained in this report are those of the grantee and do not necessarily reflect those of the funders.</em></p>
 
@@ -100,7 +191,7 @@ ici@umb.edu<br/>
 
 <p>Butterworth, J., Hall, A.C., Smith, F. A., Migliore, A., Winsor, J., Domin, D., &amp; Sulewski, J. (2013).StateData: The national report on employment services and outcomes. Boston, MA: University of Massachusetts Boston, Institute for Community Inclusion.</p>
 
-<h2 id ="ex">Executive Summary</h2>
+<h2>Executive Summary</h2>
 
 <p>Federal and state policy has paved the way to support opportunities for people with disabilities to have meaningful jobs in their communities (Kiernan, Hoff, Freeze, &amp; Mank, 2011; National Association of Councils on Developmental Disabilities, 2011). With an increasing emphasis on integrated employment and an Employment First philosophy, the nation is poised for transformation that could put Americans with disabilities on a path out of poverty and towards self-sufficiency.<br/>
 However, there remains a significant gap in employment rates between people with and without disabilities. The 2011 American Community Survey (ACS) estimates that 32.4% of working-age adults with disabilities are employed, compared with 70.5% of people without disabilities (Butterworth et al., 2012). Labor force statistics for October 2012 estimate that 28.4% of working-age adults (16 to 64) with disabilities are employed, compared with 71.0% of those without disabilities (Bureau of Labor Statistics, November 2012). Labor force data also indicate that workers with disabilities have had significantly higher levels of job loss and hardship during the recent recession (Kaye, 2010). <br/>
@@ -129,7 +220,7 @@ This report provides statistics over a 20-year period from several national data
 
 <p>Data presented for FY2011 highlight the economic and employment disparities for individuals with IDD. While some data suggest progress (e.g., the positive effect of enrollment in post secondary education on employment outcomes), overall data demonstrate the increasing need for policies and initiatives that prioritize employment. The shift in states toward Employment First policies can make an important contribution to raising expectations, improving outcomes, and increasing self-sufficiency for individuals with intellectual and developmental disabilities.</p>
 
-<h2 id="intro">Introduction</h2>
+<h2>Introduction</h2>
 
 <p>Federal and state policy has paved the way to support opportunities for people with disabilities to have meaningful jobs in their communities (Kiernan, Hoff, Freeze &amp; Mank, 2011; National Association of Councils on Developmental Disabilities, 2011). With an increasing emphasis on integrated employment, the nation is poised for transformation that could put Americans with disabilities on a path out of poverty and towards self-sufficiency.</p>
 
@@ -193,7 +284,7 @@ This report provides statistics over a 20-year period from several national data
 
 <p>While state IDD agencies widely view transition as an important time to establish a pathway into employment, National Core Indicator Project data suggest that only 6% of individuals ages 16–21 and 17% of individuals ages 22–30 are working in integrated employment. However, trend data suggest that participation in employment is on the decline for all young adults ages 16–21, including those without disabilities.</p>
 
-<h2 id="meth">Methodology</h2>
+<h2>Methodology</h2>
 
 <p>This report provides statistics over 20 years from several existing national datasets that address the status of employment and economic self-sufficiency for individuals with intellectual and developmental disabilities. The authors use abbreviations for both intellectual disability (ID) and intellectual and developmental disabilities (IDD) in this report. We do this because data sources vary in the specific target groups that can be described.</p>
 
@@ -228,7 +319,7 @@ This report provides statistics over a 20-year period from several national data
 <p>Each step of the survey provides an opportunity for states to enter explanatory comments on their data. The final step of the survey offers states the opportunity to make suggestions for how the survey could be revised in the future. States are also asked to identify the information source used to provide service category data. There is a definitions page that can be referred to from any page of the survey.  A summary of the service category definitions can be found in Table 1.
 After a state has finalized its response to the survey, ICI staff review the data and follow up with states whose data shows an unexpected increase or decrease in the total number served, number served in a service category, or total funding.</p>
 
-<table class="table table-bordered table-hover">
+<table>
 <caption>Table 1. IDD Survey Service Definitions</caption>
 <tr><th>Type of Setting/ Service:</th>
 <th>Work</th>
@@ -256,7 +347,7 @@ Facility</td>
 
 <p>The RSA-911 is a public access database that captures individual characteristics, services provided, and employment outcomes at the point of closure from VR services. Records are at the individual level, covering over 600,000 case closures per year.</p>
 
-<table class="table table-bordered table-hover">
+<table>
 <caption>Table 2: RSA Service Definitions </caption>
 <tr>
 <th>Term</th>
@@ -289,7 +380,7 @@ The American Community Survey (ACS) is a national survey designed by the U.S. Ce
 
 <p>Due to changes implemented in the ACS beginning in 2008, data for people with disabilities for 2007 and earlier years should not be compared with data beginning in 2008. The sensory disability item used from 2000–2007 was eliminated, and two distinct items for visual and hearing disabilities were added in 2008. The employment disability variable that was used from 2000–2007 was eliminated from the survey in 2008. Additional changes in wording for other disability items included removing the duration of impairment from some questions and adding the term “serious” to focus on long-term/more severe impairments.</p>
 
-<table class="table table-bordered table-hover">
+<table>
 <caption>Table 3: ACS Definitions </caption>
 <tr>
 <th>Term</th>
@@ -340,7 +431,7 @@ Is this person deaf or does he or she have serious difficulty hearing (hearing d
 
 <p>These data are abstracted from the Supplement Security Income (SSI) Annual Statistical Report. The SSA reports work-incentive participation and the number of individuals receiving SSI who are working. Beginning with the 2010 SSI Annual Statistical Report, tables showing data by diagnostic group provide more specific details for mental disorders in these categories: autistic disorders, developmental disorders, childhood and adolescent disorders not elsewhere classified, intellectual disability, mood disorders, organic mental disorders, schizophrenic and other psychotic disorders, and all other mental disorders. Data from previous years use three categories for mental disorders: retardation, schizophrenia, and other.</p>
 
-<table class="table table-bordered table-hover">
+<table>
 <caption>Table 4: Work Incentive Program Definitions </caption>
 <tr>
     <th>Program</th>
@@ -367,7 +458,7 @@ Is this person deaf or does he or she have serious difficulty hearing (hearing d
 <p><em>State Demographics.</em>
 State demographics are from multiple data sources. State population is taken from the U.S. Census website (www.census.gov). Unemployment data is taken from the Bureau of Labor Statistics website <a href="www.bls.gov">http://www.bls.gov</a>.</p>
 
-<h2 id ="nat">National Trends in Employment</h2>
+<h2>National Trends in Employment</h2>
 
 <p><strong>The National Survey of State Intellectual and Developmental Disabilities Agencies’ Day and Employment Services (FY1999–2011)</strong>
 The data reported here are the core elements of the Institute for Community Inclusion’s National Survey of State Intellectual and Developmental Disabilities Agencies’ Day and Employment Services. These data focus on participation in integrated employment, community-based non-work, and facility-based services. Data are solicited from all 50 states and the District of Columbia. The number of reporting states varied from 37 to 45 over the time studied (1999–2011).
@@ -444,7 +535,7 @@ Major findings include:</p>
 
 <p>During this same time period in these 17 states, non-work services have continued to grow at the expense of integrated employment. The percentage of individuals receiving non-work services increased from 41.8% in FY1999 to 59.7% in FY2011—an increase of more than 55,000 individuals in these 17 states. These data demonstrate that, despite the decrease in facility-based work services, state IDD agencies need to place a greater emphasis on integrated employment outcomes.</p>
 
-<table class="table table-bordered table-hover">
+<table>
 <caption>Table 6. Distribution of Individuals by Service</caption>
 <tr>
 <th colspan="4">Number Served</th>
@@ -567,7 +658,7 @@ Major findings include:</p>
 
 <p><em>Over time, fewer people exited the VR program.</em> As Table 7 shows, in 2011, a total of 47,812 people with intellectual disabilities exited the VR program. This figure was lower than in 2010 and the lowest reported during the past ten years. The highest figure was reported in 2003, when 69,645 people with intellectual disabilities exited the program. The corresponding figure for people with other disabilities was 494,273 in 2011.</p>
 
-<table class="table table-bordered table-hover">
+<table>
     <caption>Table 7. Trends in Employment Outcomes: 2002–2011</caption>
 <tr>
     <th colspan="3">Total closures</th>
@@ -721,7 +812,7 @@ Major findings include:</p>
 
 <p>People with intellectual disabilities in Vermont were the most likely to find jobs within one year of application (62%), whereas none of the people with intellectual disabilities in Arizona found jobs within one year of application. Nevada also reported the highest percentage of people with other disabilities who found employment within one year (62%),while Arizona reported the lowest percentage of people with other disabilities who achieved employment in one year (2%).</p>
 
-<table class="table table-bordered table-hover" summary="Table 8. State Outcomes in 2011">
+<table summary="Table 8. State Outcomes in 2011">
     <caption>Table 8. State Outcomes in 2011</caption>
   <tbody>
     <tr>
@@ -2850,7 +2941,7 @@ Major findings include:</p>
 
 <p>Table 9 below displays indicators of labor market success for four groups of working-age individuals: people who do not have a disability, people who indicated they have at least one disability (any disability), people with a cognitive disability, and people with a cognitive disability who received Supplemental Security Income (SSI) in 2011. This last group is likely to include people who have the most significant cognitive disabilities.</p>
 
-<table class="table table-bordered table-hover" class="data" summary="Table 9. Labor Market Success Indicators by Disability Status: 2011">
+<table class="data" summary="Table 9. Labor Market Success Indicators by Disability Status: 2011">
 <caption>Table 9. Labor Market Success Indicators by Disability Status: 2011</caption
   <tbody>
     <tr>
@@ -2980,7 +3071,7 @@ Major findings include:</p>
 
 <p>Although people in disability subgroups who worked were less likely to be living in poverty than their non-working counterparts, the poverty rates for disability subpopulations who work are still higher than the poverty rates for their counterparts without disabilities who work. This finding suggests that people with disabilities may have a greater likelihood of being underemployed, i.e., working in jobs that do not provide them with the earning potential to get above the poverty line.</p>
 
-<table class="table table-bordered table-hover" class="data" summary="Table 10. Poverty Rates in 2011 for Disability Subgroups by Employment Status">
+<table class="data" summary="Table 10. Poverty Rates in 2011 for Disability Subgroups by Employment Status">
     <caption>Table 10. Poverty Rates in 2011 for Disability Subgroups by Employment Status</caption>
   <tbody>
     <tr>
@@ -3067,7 +3158,7 @@ Major findings include:</p>
 
 <p>A notable trend is the sharp drop in the number of people enrolled in the PASS program between 1995 and 1997. This decline followed a publication by the General Accounting Office that criticized the SSA for being too lenient in accepting applicants into a program deemed ineffective for achieving the goal of self-support. The procedures for acceptance were then reevaluated by the SSA and amended, resulting in fewer approvals in subsequent years. Recent data have also shown a decrease in the average number of IRWE and BWE enrollees.</p>
 
-<table class="table table-bordered table-hover" class="data" summary="Table 11. Number of People Enrolled Nationally in Work Incentive Programs from 1995–2011 (Odd Years Only)">
+<table class="data" summary="Table 11. Number of People Enrolled Nationally in Work Incentive Programs from 1995–2011 (Odd Years Only)">
     <caption>Table 11. Number of People Enrolled Nationally in Work Incentive Programs from 1995–2011 (Odd Years Only)</caption>
   <tbody>
     <tr>
@@ -3192,7 +3283,7 @@ Major findings include:</p>
 
 <p>The low rates of participation in work incentive programs by SSI recipients with ID should not overshadow the overall impact of these programs. For instance, in 2011, section 1619(b) benefits allowed more than 18,721 individuals with ID to work and to continue receiving Medicaid benefits. Better explanations of incentives and greater encouragement of participation in incentive programs by employment and disability services professionals could lead to higher rates of employment and better employment outcomes for individuals receiving SSI.</p>
 
-<table class="table table-bordered table-hover" class="data" summary="Table 12. Employment Outcomes and Participation in Work Incentives for SSI Recipients with  Disabilities (2011)">
+<table class="data" summary="Table 12. Employment Outcomes and Participation in Work Incentives for SSI Recipients with  Disabilities (2011)">
     <caption>Table 12. Employment Outcomes and Participation in Work Incentives for SSI Recipients with  Disabilities (2011)</caption>
   <tbody>
     <tr>
@@ -3256,7 +3347,7 @@ Major findings include:</p>
 <strong>Figure 8: Percentage of SSI Recipients Who Work by Age (2011</strong>*
 <img src="images/figure8.png" alt="Figure 8: Percentage of SSI Recipients Who Work by Age (2011)" /></p>
 
-<h2 id="conc">Conclusion</h2>
+<h2>Conclusion</h2>
 
 <p>Data continue to highlight the economic disparities between people with and without intellectual and developmental disabilities. More individuals continue to be supported in facility-based employment, typically earning sub-minimum wage, than in integrated employment. Though data demonstrate that the percentage of individuals receiving facility-based work services has declined slightly, there was not a corresponding increase in integrated employment. Growth in community-based non-work services continues to be reported, and may challenge employment as a priority outcome in many states.</p>
 
@@ -3400,7 +3491,7 @@ Major findings include:</p>
 <p>Walsh, F. (2011). <i>Normal family processes: Growing diversity and complexity. </i>New York, NY: The Guilford Press.</p>
 
 
-<h2 id="tc">Topical Chapter:</h2>
+<h2>Topical Chapter:</h2>
 
 <h4>Educational, Employment, and Economic Outcomes for Youth and Young Adults with Intellectual and Developmental Disabilities</h4>
 
@@ -3454,7 +3545,7 @@ Major findings include:</p>
 
 <p>Measures of employment outcomes for youth and young adults with IDD between 2000 and 2010 indicate how those outcomes both reflect and differ from more general social and economic trends (Table 13). According to the ACS, the percentage employed decreased substantially among youth and young adults with and without disabilities from 2008–2010, consistent with Bureau of Labor Statistics reports that unemployment peaked in 2009–2010 (www.bls.gov/cps/cpsaat01.htm). For youth ages 16–21, and for both youth and young adults with disabilities, this steep drop simply exacerbates an overall downward trend from 2000–2010. For youth and young adults in the VR system, similar trends can be seen in both rehabilitation rate and percent closures into employment in the RSA-911 (Table 14).</p>
 
-<table class="table table-bordered table-hover" class="data" summary="Table 13. Employment Trends (ACS Data)">
+<table class="data" summary="Table 13. Employment Trends (ACS Data)">
   <caption>Table 13. Employment Trends (ACS Data)</caption>
   <tbody>
     <tr>
@@ -3708,7 +3799,7 @@ Major findings include:</p>
 </table>
 
 
-<table class="table table-bordered table-hover" class="data" summary="Table 14. Employment Trends (RSA-911 Data)">
+<table class="data" summary="Table 14. Employment Trends (RSA-911 Data)">
     <caption>Table 14. Employment Trends (RSA-911 Data)</caption>
   <tbody>
     <tr>
@@ -3966,7 +4057,7 @@ Major findings include:</p>
 
 <p>Measures of economic status also reflected larger trends, particularly the economic recession. In the RSA-911 data, there has been a decrease over the past decade in the percentage of individuals relying on personal income as their primary source of support, both at intake and at closure (Table 15). Correspondingly, the percentage relying on family and friends as a primary source of support has risen over the same time period.</p>
 
-<table class="table table-bordered table-hover" class="data" summary="Table 15. Income Sources, VR Case Closures: Ages 16–30 (RSA-911 Data)">
+<table class="data" summary="Table 15. Income Sources, VR Case Closures: Ages 16–30 (RSA-911 Data)">
     <caption>Table 15. Income Sources, VR Case Closures: Ages 16–30 (RSA-911 Data)</caption>
   <tbody>
     <tr>
@@ -4562,7 +4653,7 @@ Major findings include:</p>
 
 <p>The decrease in employment is accompanied by an increase in the percentage with a high school diploma or GED, a trend that is apparent across all groups (Table 16). These patterns reflect an overall trend of decreasing employment and increasing participation in education among youth and young adults, as has been described elsewhere (Fernandez-Alcantara, 2012).</p>
 
-<table class="table table-bordered table-hover" class="data" summary="Table 16. Estimated Educational Attainment (ACS Data)">
+<table class="data" summary="Table 16. Estimated Educational Attainment (ACS Data)">
     <caption>Table 16. Estimated Educational Attainment (ACS Data) </caption>
   <tbody>
     <tr>
@@ -4820,7 +4911,7 @@ Major findings include:</p>
 
 <p>Inflation-adjusted wages have also decreased over time, according to the ACS (Table 17). Similar to employment rates, wages dropped most substantially from 2008 to 2010, and the pattern of declining wages held for all groups except youth ages 16–21 with cognitive disabilities receiving SSI. The ACS data also indicate a decline in hours worked per week over time. However, hours worked and wages both held fairly steady in the RSA-911 data (Table 18).</p>
 
-<table class="table table-bordered table-hover" class ="data" summary="Table 17. Wage and Hour Trends (ACS)">
+<table class ="data" summary="Table 17. Wage and Hour Trends (ACS)">
   <caption>Table 17. Wage and Hour Trends (ACS)</caption>
   <tbody>
     <tr>
@@ -5307,7 +5398,7 @@ Major findings include:</p>
 
 <p><em>*Due to changes implemented in the American Community Survey in 2008, data for people with disabilities from 2007 and earlier should not be compared with data beginning in 2008. See Methodology section for clarification.</em></p>
 
-<p>T<table class="table table-bordered table-hover" class="data" summary="Table 18. Wage and Hour Trends (RSA-911 Data)">
+<p>T<table class="data" summary="Table 18. Wage and Hour Trends (RSA-911 Data)">
     <caption>Table 18. Wage and Hour Trends (RSA-911 Data)</caption>
   <tbody>
     <tr>
@@ -5578,7 +5669,7 @@ Major findings include:</p>
 
 <p>In general, the trend of better employment and education outcomes for the older group confirms the notion that people tend to advance their careers and circumstances as they get older and gain more experience, and that many crucial life changes for young adults with IDD are occurring in their mid-twenties. In particular, the changes between the two age groups may reflect the transition from limited engagement in employment while in school to employment as a primary life activity.</p>
 
-<table class="table table-bordered table-hover" class="data" summary="Table 19. Employment Participation and Outcomes for Youth and Young Adults Receiving IDD Services in 2011(NCI States)">
+<table class="data" summary="Table 19. Employment Participation and Outcomes for Youth and Young Adults Receiving IDD Services in 2011(NCI States)">
     <caption>Table 19. Employment Participation and Outcomes for Youth and Young Adults Receiving IDD Services in 2011(NCI States)</caption>
   <tbody>
     <tr>
@@ -5755,7 +5846,7 @@ Major findings include:</p>
 
 <p>Services across states as well as various collaboration efforts reveal a focus on transition, but transition-specific services are a work in progress. Most responding states reported providing numerous services for transitioning students (Table 20). For instance, a majority of states provided outreach materials on employment to individuals and families. Several states also indicated providing training for youth and young adults and families on employment options. A smaller number of states reported providing employment services or supports during the school year or during the summer, or providing supports for service, volunteering, or internship activities. Of the 28 states that reported providing at least one of the eight transition services included in the response set, 17 provided five or more (five states provided all eight services).</p>
 
-<table class="table table-bordered table-hover" summary="Table 20. Transition Services Provided or Funded by IDD Agencies">
+<table summary="Table 20. Transition Services Provided or Funded by IDD Agencies">
     <caption>Table 20. Transition Services Provided or Funded by IDD Agencies</caption>
   <tbody>
     <tr>
@@ -5909,72 +6000,5 @@ Major findings include:</p>
 <h4>Note regarding Table 5</h4>
 
 <p>In Table 5, the row titled “Number of people served in integrated employment” displays the total number of individuals receiving integrated employment services from the state IDD agency during that fiscal year. This figure is not an indicator of the number of people actually working in integrated employment settings in the community. The ICI recently began collecting data on the number of people working in integrated employment settings in the community and will offer this as a trend data point in the future.</p>
-
-
-    </div><!-- /.container -->
- 
-    <!-- JavaScript plugins (requires jQuery) -->
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Optionally enable responsive features in IE8 -->
-    <script src="js/respond.js"></script>
-   <script>
-$(document).ready(function() {
-  function filterPath(string) {
-  return string
-    .replace(/^\//,'')
-    .replace(/(index|default).[a-zA-Z]{3,4}$/,'')
-    .replace(/\/$/,'');
-  }
-  var locationPath = filterPath(location.pathname);
-  var scrollElem = scrollableElement('html', 'body');
- 
-  $('a[href*=#]').each(function() {
-    var thisPath = filterPath(this.pathname) || locationPath;
-    if (  locationPath == thisPath
-    && (location.hostname == this.hostname || !this.hostname)
-    && this.hash.replace(/#/,'') ) {
-      var $target = $(this.hash), target = this.hash;
-      if (target) {
-        var targetOffset = $target.offset().top;
-        $(this).click(function(event) {
-          event.preventDefault();
-          $(scrollElem).animate({scrollTop: targetOffset}, 400, function() {
-            location.hash = target;
-          });
-        });
-      }
-    }
-  });
- 
-  // use the first element that is "scrollable"
-  function scrollableElement(els) {
-    for (var i = 0, argLength = arguments.length; i <argLength; i++) {
-      var el = arguments[i],
-          $scrollElement = $(el);
-      if ($scrollElement.scrollTop()> 0) {
-        return el;
-      } else {
-        $scrollElement.scrollTop(1);
-        var isScrollable = $scrollElement.scrollTop()> 0;
-        $scrollElement.scrollTop(0);
-        if (isScrollable) {
-          return el;
-        }
-      }
-    }
-    return [];
-  }
- 
-});
-
-</script>
-  </body>
+</body>
 </html>
-
-
-
-
-
